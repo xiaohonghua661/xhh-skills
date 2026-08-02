@@ -2,6 +2,9 @@
 name: code-comment-style
 description: 约束代码注释的写法——文件头功能总览块、函数傻瓜式说明块、流程步骤注释、行内讲“为什么”、全中文 UTF-8 无 BOM、对齐可扫读、不影响代码审查。写/改/审代码需要补注释、统一注释风格、把英文注释翻成中文时使用。
 version: 1
+upstream: https://github.com/xiaohonghua661/xhh-skills
+branch: yueting
+path: 嵌入式/code-comment-style/SKILL.md
 ---
 
 # code-comment-style — 代码注释写法约束
