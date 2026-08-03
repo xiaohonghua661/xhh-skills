@@ -24,12 +24,12 @@ Claude Code / Codex / dd 都软链接（junction）回本库，**改这里即处
 
 - Claude Code：`~/.claude/skills/<名>` ─junction→ `本库/<分类>/<名>`
 - Codex：`~/.codex/skills/<名>` ─junction→ 同上
-- dd：`DD/data/skills/xhh-skills`（dd 扫描器暂不认 junction，用克隆 + `%发布skill` 同步）
+- dd：`DD/data/skills/xhh-skills` ─junction→ 本库根目录（扫描器会跟随 junction）
 
 建链：`mklink /J`（Windows，免管理员）；解链只用 `rmdir`，**禁 `rm -rf`**。
 
 ## 如何发布更新
 
 - dd 工作流 **`%git发布`**：commit → push `yueting` → 打新 tag 存源码快照 → Releases 发 changelog。
-- 发一个 skill 用 **`%发布skill`**（写母本 + 装本地链接 + 调 `%git发布` + 同步 dd 副本）。
+- 发一个 skill 用 **`%发布skill`**（写母本 + 校验三端 junction + 调 `%git发布` + 验收 dd 即时读取）。
 - 不手工操作本库 git。
