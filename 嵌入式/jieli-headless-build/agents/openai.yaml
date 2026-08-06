@@ -1,0 +1,4 @@
+interface:
+  display_name: "杰理无头编译与烧录"
+  short_description: "安全执行杰理 AC79 Code::Blocks 无头编译与烧录验证"
+  default_prompt: "Use $jieli-headless-build to safely build or flash this Jieli AC79 Code::Blocks project."
